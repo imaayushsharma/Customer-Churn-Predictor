@@ -45,3 +45,67 @@ Place all of these files in the same project directory.
 ```bash
 git clone https://github.com/yourusername/churn-prediction-app.git
 cd churn-prediction-app
+2. Create and activate a virtual environment
+bash
+Copy code
+python3 -m venv venv
+source venv/bin/activate       # macOS/Linux
+venv\Scripts\activate          # Windows
+3. Install dependencies
+bash
+Copy code
+pip install -r requirements.txt
+If you don’t have a requirements.txt, you can install them manually:
+
+bash
+Copy code
+pip install streamlit tensorflow scikit-learn pandas numpy
+▶️ Usage
+Run the Streamlit app:
+bash
+Copy code
+streamlit run streamlit_churn_frontend.py
+Then open in your browser:
+arduino
+Copy code
+http://localhost:8501
+🧾 Input Features
+Feature	Description	Example
+CreditScore	Customer’s credit score	715
+Geography	Country (France, Germany, Spain)	France
+Gender	Male or Female	Male
+Age	Age of the customer	37
+Tenure	Years of association with the bank	5
+Balance	Account balance	84532.45
+NumOfProducts	Number of bank products used	2
+HasCrCard	Has a credit card (1 = Yes, 0 = No)	1
+IsActiveMember	Active customer (1 = Yes, 0 = No)	0
+EstimatedSalary	Customer’s annual salary	112450.30
+
+📈 Output
+The app will display:
+
+Prediction Result: Exited or Not Exited
+
+Prediction Probability: Model’s confidence score
+
+Progress bar visualizing churn likelihood
+
+🧰 Tech Stack
+Frontend: Streamlit
+
+Backend: TensorFlow / Keras
+
+Data Processing: scikit-learn, pandas, numpy
+
+Model Type: Deep Neural Network (Binary Classification)
+
+📦
+
+🧑‍💻 Author
+Ayush Sharma
+Associate Data Analyst @ GlobalLogic
+📧 official.aayushsharmaa@gmail.com
+
+🔗 LinkedIn
+ | GitHub
